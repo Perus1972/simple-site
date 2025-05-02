@@ -17,3 +17,9 @@ img {
 .button:hover {
   transform: scale(1.05);
 }
+@media (max-width: 768px) {
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
