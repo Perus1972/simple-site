@@ -1,230 +1,28 @@
-!DOCTYPE html>
-<html lang="uk">
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Особистий сайт Юри - мої інтереси, досвід та контакти">
-    <title>Юра Перуський | Особистий сайт</title>
-    
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    
-    <!-- Font Awesome для іконок -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    
-    <!-- Вбудовані стилі -->
-    <style>
-        :root {
-            --primary-color: #2c3e50;
-            --secondary-color: #3498db;
-            --text-color: #333;
-        }
-
-        body {
-            font-family: 'Roboto', sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding-top: 60px;
-            color: var(--text-color);
-        }
-
-        /* Навігація */
-        .navbar {
-            position: fixed;
-            top: 0;
-            width: 100%;
-            background: rgba(255, 255, 255, 0.95);
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-            z-index: 1000;
-        }
-
-        .navbar ul {
-            display: flex;
-            justify-content: center;
-            list-style: none;
-            padding: 1rem;
-            margin: 0;
-        }
-
-        .navbar a {
-            color: var(--primary-color);
-            text-decoration: none;
-            padding: 0.5rem 1.5rem;
-            transition: color 0.3s;
-        }
-
-        .navbar a:hover {
-            color: var(--secondary-color);
-        }
-
-        /* Секції */
-        section {
-            padding: 4rem 2rem;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        /* Профільне фото */
-        .profile-img {
-            width: 200px;
-            border-radius: 50%;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-            display: block;
-            margin: 2rem auto;
-        }
-
-        /* Галерея */
-        .gallery {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 1rem;
-            margin: 2rem 0;
-        }
-
-        .dorm-photo {
-            width: 100%;
-            border-radius: 8px;
-            transition: transform 0.3s;
-        }
-
-        .dorm-photo:hover {
-            transform: scale(1.03);
-        }
-
-        /* Форма */
-        form {
-            max-width: 600px;
-            margin: 0 auto;
-        }
-
-        input, textarea {
-            width: 100%;
-            padding: 0.8rem;
-            margin: 0.5rem 0;
-            border: 1px solid #ddd;
-            border-radius: 4px;
-            font-family: inherit;
-        }
-
-        button {
-            background: var(--secondary-color);
-            color: white;
-            padding: 0.8rem 2rem;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: transform 0.3s;
-        }
-
-        button:hover {
-            transform: scale(1.05);
-        }
-
-        /* Футер */
-        footer {
-            background: var(--primary-color);
-            color: white;
-            text-align: center;
-            padding: 2rem;
-            margin-top: 4rem;
-        }
-
-        .social-links {
-            margin: 1rem 0;
-        }
-
-        .social-links a {
-            color: white;
-            font-size: 1.5rem;
-            margin: 0 1rem;
-            transition: opacity 0.3s;
-        }
-
-        .social-links a:hover {
-            opacity: 0.8;
-        }
-
-        /* Адаптивність */
-        @media (max-width: 768px) {
-            .navbar ul {
-                flex-direction: column;
-                text-align: center;
-                padding: 0.5rem;
-            }
-
-            .navbar a {
-                padding: 0.5rem;
-            }
-
-            section {
-                padding: 2rem 1rem;
-            }
-        }
-    </style>
+    <title>Календар WEB</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Навігація -->
-    <header>
-        <nav class="navbar">
-            <ul>
-                <li><a href="#home">Головна</a></li>
-                <li><a href="#about">Про мене</a></li>
-                <li><a href="#dorm">Гуртожиток</a></li>
-                <li><a href="#contact">Контакти</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <!-- Головний контент -->
-    <main>
-        <section id="home">
-            <h1>Ласкаво прошу на мій сайт! 👋</h1>
-            <img src="my_photo.jpg" alt="Юра Перуський" class="profile-img">
-        </section>
-
-        <section id="about">
-            <h2>Про мене</h2>
-            <article>
-                <h3>📚 Навчання</h3>
-                <p>Навчаюся в Київській політехніці на факультеті інформатики. Моя улюблена дисципліна - веб-розробка.</p>
-            </article>
-            
-            <article>
-                <h3>🎮 Хобі</h3>
-                <p>У вільний час люблю грати в шахи, програмувати та подорожувати.</p>
-            </article>
-        </section>
-
-        <section id="dorm">
-            <h2>🏠 Мій гуртожиток</h2>
-            <div class="gallery">
-                <img src="dorm1.jpg" alt="Кімната в гуртожитку" class="dorm-photo">
-                <img src="dorm2.jpg" alt="Спільна кухня" class="dorm-photo">
+    <div class="container">
+        <div class="header">
+            <div class="img">
+                <img src="logo.png" alt="наш логотип">
             </div>
-        </section>
-
-        <section id="contact">
-            <h2>📩 Зв'язатися зі мною</h2>
-            <form action="https://formspree.io/f/ваш-form-id" method="POST">
-                <input type="text" name="name" placeholder="Ваше ім'я" required>
-                <input type="email" name="email" placeholder="Ваш Email" required>
-                <textarea name="message" rows="5" placeholder="Ваше повідомлення..." required></textarea>
-                <button type="submit">Надіслати</button>
-            </form>
-        </section>
-    </main>
-
-    <!-- Футер -->
-    <footer>
-        <div class="social-links">
-            <a href="https://t.me/ваш_нік" target="_blank" aria-label="Telegram">
-                <i class="fab fa-telegram"></i>
-            </a>
-            <a href="mailto:ваш@email.com" aria-label="Email">
-                <i class="fas fa-envelope"></i>
-            </a>
+            <div class="header1">
+                <h1>2025</h1>
+            </div>
+            <div class="header2">
+                <h3>Державний навчальний заклад</h3>
+            </div>
+            <div class="header3">
+                Бахмутський центр<br>
+                офесійно-технічної освіти 
+            </div>
         </div>
-        <p>© 2024 Юра Перуський. Усі права захищені</p>
-    </footer>
+    </div>
 </body>
 </html>
